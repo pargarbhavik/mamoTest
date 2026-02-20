@@ -1,0 +1,68 @@
+/* Mobile Menu Toggle Fix */
+.toggle-menu,
+#toggle {
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 10000 !important;
+  pointer-events: auto !important;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.toggle-menu *,
+#toggle * {
+  pointer-events: none !important;
+}
+
+.toggle-menu div {
+  transition: all 0.3s ease;
+}
+
+/* Ensure mobile menu is properly positioned */
+.mobile-menu {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  background: #fff;
+}
+
+/* Make sure the parent container doesn't block clicks */
+.right-side-menu-w {
+  pointer-events: auto !important;
+}
+
+.right-side-menu-w > * {
+  pointer-events: auto !important;
+}
+
+/* Ensure the toggle is visible and clickable on mobile */
+@media (max-width: 767px) {
+  .toggle-menu,
+  #toggle {
+    display: block !important;
+    width: 30px;
+    height: 25px;
+    padding: 5px;
+  }
+  
+  .toggle-menu div {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-menu.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .toggle-menu.on .two {
+    opacity: 0;
+  }
+  
+  .toggle-menu.on .three {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}

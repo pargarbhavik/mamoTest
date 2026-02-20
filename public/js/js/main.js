@@ -445,17 +445,19 @@
 
 // Header Sticky
 const navbar = document.querySelector('#navbar');
-const height = 150;
-let ticking = false;
-window.addEventListener('scroll', () => {
-    if (!ticking) {
-        window.requestAnimationFrame(() => {
-            navbar.classList.toggle('sticky', window.scrollY >= height);
-            ticking = false;
-        });
-        ticking = true;
-    }
-});
+if (navbar) {
+    const height = 150;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                navbar.classList.toggle('sticky', window.scrollY >= height);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+}
 
 // Animation GSAP
 function all_title_animation() {
@@ -478,8 +480,8 @@ function all_title_animation() {
         gsap.set(quote, { perspective: 400 });
         const chars = quote.split.chars;
         const styleConfig = {
-            style1: { opacity: 0, x: 50 },
-            style2: { opacity: 0, y: "90%", rotateX: "-40deg" },
+            style: { opacity: 0, x: 50 },
+            style: { opacity: 0, y: "90%", rotateX: "-40deg" },
             style3: { opacity: 0 }
         };
         if (styleConfig[animationStyle]) {
@@ -500,4 +502,6 @@ function all_title_animation() {
         });
     });
 }
-ScrollTrigger.addEventListener("refresh", all_title_animation);
+if (typeof ScrollTrigger !== 'undefined') {
+    ScrollTrigger.addEventListener("refresh", all_title_animation);
+}

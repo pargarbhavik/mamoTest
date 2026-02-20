@@ -6,20 +6,18 @@ head
   link(rel='icon' href='images/favicon.ico' type='image/vnd.microsoft.icon')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css')
   title Blog Details - Mamo Technologies
-  link(rel='stylesheet' media='all' href='css/style2.css')
-  link(rel='stylesheet' media='all' href='css/style1.css')
-  script(src='js/jquery.form.min.js')
-  script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-1BESF224BJ')
+  link(rel='stylesheet' media='all' href='css/style.css')
+  link(rel='stylesheet' media='all' href='css/style.css')
+
   script.
     window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-1BESF224BJ');
   // Link of CSS Files
-  link(rel='stylesheet' href='css/css/animate.min.css')
   link(rel='stylesheet' href='css/css/swiper-bundle.min.css')
-  link(rel='stylesheet' href='css/css/flaticon_mycollection.css')
-  link(rel='stylesheet' href='css/css/remixicon.css')
+
+  
   link(rel='stylesheet' href='css/css/scrollCue.min.css')
   link(rel='stylesheet' href='css/css/style.css')
-  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js')
+  
 a.visually-hidden.focusable.skip-link(href='#main-content')
   | Skip to main content
 .common-header-wrapper
@@ -258,7 +256,6 @@ main.main
                           | in leveraging emerging technologies such as AI/ML, Fintech,
                           | Blockchain, and Machine Learning to revolutionize industries and
                           | enhance business efficiency worldwide.
-                        p
                           a.know-more-btn(href='overview.html') Know More
                     #v-pills-services.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-services-tab' tabindex='0')
                       .menu-para
@@ -291,148 +288,10 @@ main.main
                                 | Virtual Assistant Services
                               a.nav-link-b(href='packaging-design')
                                 | Packaging Design Services
-                    #v-pills-products.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-products-tab' tabindex='0')
-                      .menu-para
-                        h6 Homegrown AI/ML industry platforms
-                        .row
-                          .col-md-6
-                            .menu-para-col
-                              a.nav-link-b(href='https://predictsense.io/' target='_blank') PredictSense&nbsp;
-                              a.nav-link-b(href='https://iotsense.io/' target='_blank') IoTSense 
-                              a.nav-link-b.cursor-not-allowed(style='opacity:0;visibility:hidden;' href='#')
-                                | VisionSense 
-                                span.we-re-hiring Coming soon
-          .dropdown-menu.mega-dropdown-menu
-            .container
-              .row
-                .col-md-4.link-col-left
-                  #a-pills-tab.nav-pills(href='#' role='tablist' aria-orientation='vertical')
-                    p
-                      a.nav-link-a.active(href='about-us') About Us 
-                      a.nav-link-a(href='careers-life-at-Mamo.html ') Life at Mamo 
-                    p
-                      a.nav-link-a.careers-life-btn-a(href='careers-life-at-Mamo.html #contact-form-sect.html') Careers
-                    p
-                      a.nav-link-a(href='corporate-social-responsibility.html')
-                        | Corporate
-                        | Social Responsibility
-                      a.nav-link-a(href='contact') Contact Us&nbsp;
-                .col-md-8.link-col-right
-                  #a-pills-tabContent.tab-content
-                    #a-pills-about-us.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='a-pills-about-us-tab' tabindex='0')
-                      .menu-para
-                        h6 About Mamo 
-          .dropdown-menu.mega-dropdown-menu
-            .container
-              .row
-                .col-md-4.link-col-left
-                  #b-pills-tab.nav-pills(role='tablist' aria-orientation='vertical')
-                    a#b-pills-about-us-tab.nav-link-a.active(href='Mamo -articles.html' type='button' role='tab' aria-controls='b-pills-about-us' aria-selected='true') Articles and Blog Report 
-                    a.nav-link-a(href='latest-news-and-events.html')
-                      | Newsroom and Events
-                    a.nav-link-a(href='case-studies.html') Case Studies&nbsp;
-                .col-md-8.link-col-right
-                  #b-pills-tabContent.tab-content
-                    #b-pills-about-us.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='b-pills-about-us-tab' tabindex='0')
-                      .menu-para
-                        .row.row-adj
-                          .col-md-6
-                            .menu-card-h
-                              .tag-a
-                                a(href='Mamo -articles/predictsense-revolutionizing-decision-making-in-banking.html')
-                                  span FINTECH
-                              p.para
-                                a(href='Mamo -articles/predictsense-revolutionizing-decision-making-in-banking.html')
-                                  | Revolutionizing
-                                  | Decision Making in Banking
-                          .col-md-6
-                            .menu-card-h
-                              .tag-a
-                                a(href='Mamo -articles/why-credit-card-companies-must-deploy-ai-for-fraud-prevention.html')
-                                  span FINTECH
-                              p.para
-                                a(href='Mamo -articles/why-credit-card-companies-must-deploy-ai-for-fraud-prevention.html')
-                                  | Why
-                                  | Credit Card Companies must Deploy AI Fraud
-                                  | Prevention?
-          .hide-desktop.show-mobile
-            .mobile-menu
-              nav#column_left
-                ul.nav-list
-                  li
-                    a.accordion-heading(data-bs-toggle='collapse' data-bs-target='#submenu1' aria-expanded='false') What we do&nbsp;
-                    ul#submenu1.nav-list.collapse(aria-expanded='false')
-                      li
-                        a(href='overview.html') Overview
-                      li
-                        a(data-bs-toggle='collapse' data-bs-target='#submenu2' aria-expanded='false') Capabilities&nbsp;
-                        ul#submenu2.nav-list.collapse(aria-expanded='false')
-                          li
-                            a(href='services/ai-ml.html')
-                              | Artificial Intelligence and
-                              | Machine Learning
-                          li
-                            a(href='services/global-capability-center.html')
-                              | Global
-                              | Capability Center
-                          li
-                            a(href='services/digital-transformation.html')
-                              | Digital
-                              | Transformation
-                          li
-                            a(href='services/cybersecurity.html') Cybersecurity
-                          li
-                            a(href='services/Mamo -design-studio.html')
-                              | Mamo  Design
-                              | Studio
-                      li
-                        a(data-bs-toggle='collapse' data-bs-target='#submenu3' aria-expanded='false') Industries&nbsp;
-                        ul#submenu3.nav-list.collapse(aria-expanded='false')
-                          li
-                            a(href='industries/banking-fintech.html')
-                              | Banking and
-                              | Fintech
-                          li
-                            a(href='industries/insurance-insurtech.html')
-                              | Insurance and
-                              | InsurTech
-                          li
-                            a(href='industries/emerging-tech-startups.html')
-                              | Emerging Tech
-                              | Startups
-                      li
-                        a(data-bs-toggle='collapse' data-bs-target='#submenu4' aria-expanded='false') Products&nbsp;
-                        ul#submenu4.nav-list.collapse(aria-expanded='false')
-                          li
-                            a(href='https://iotsense.io/' target='_blank') IoTSense
-                          li
-                            a(href='https://predictsense.io/' target='_blank') PredictSense
-                  //
-                    <li><a class="accordion-heading" data-bs-toggle="collapse"
-                    data-bs-target="#submenu21" aria-expanded="false">Who we are </a>
-                    <ul class="nav-list collapse" id="submenu21" aria-expanded="false">
-                    <li><a href="about-us">About Us</a></li>
-                    <li><a href="careers-life-at-Mamo.html ">Life at Mamo </a></li>
-                    <li><a href="careers-life-at-Mamo.html #contact-form-sect"
-                    target="_blank">Careers</a></li>
-                    <li><a href="corporate-social-responsibility.html">Corporate Social
-                    Responsibility</a></li>
-                    <li><a href="contact">Contact Us</a></li>
-                    </ul>
-                    </li>
-                  li
-                    a.accordion-heading(data-bs-toggle='collapse' data-bs-target='#submenu31' aria-expanded='false') Blog&nbsp;
-                    ul#submenu31.nav-list.collapse(aria-expanded='false')
-                      li
-                        a(href='latest-news-and-events.html') Newsroom and Events
-                      li
-                        a(href='Mamo -articles.html') Articles and Blog Report
-                      li
-                        a(href='case-studies.html') Case Studies
       // Start Responsive Sidebar Menu Area
       #sidebarOffcanvas.sidebar-menu-area.offcanvas.offcanvas-end(tabindex='-1')
         .offcanvas-header
-          a(href='index.html')
+          a(href='/')
             img(src='images/logo2.svg' alt='logo')
           button.close-btn(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
             i.ri-close-line
@@ -445,7 +304,7 @@ main.main
                 .accordion-body
                   #sidebarAccordion1.accordion
                     .accordion-item
-                      a.accordion-link(href='index.html')
+                      a.accordion-link(href='/')
                         | HR Staffing Home
                     .accordion-item
                       a.accordion-link(href='index-2.html')
@@ -589,11 +448,11 @@ main.main
           .row.justify-content-center.align-items-center.g-4(data-cues='slideInUp' data-duration='1000')
             .col-xl-8.col-md-12
               .page-banner-content
-                .content.section-title-animation.animation-style1
+                .content.section-title-animation.animation-style
                   h2.title-animation Blog Details
                   ul.list
                     li
-                      a(href='index.html') Home
+                      a(href='/') Home
                     li Blog Details
                 .image
                   img(src='images/page-banner20.jpg' alt='image')
@@ -926,7 +785,7 @@ main.main
             .chat-header CHAT BOT
             #chatBody.chat-body
               .bot-msg
-                img.avatar(src='https://cdn-icons-png.flaticon.com/512/4712/4712027.png')
+                img.avatar(src='https://cdn-icons-png.flaticon.com/512/4712/4712027.png' alt='icon')
                 .msg-bubble
                   | Hi there &#x1F44B; How can I help you?
                   span.time 15:50
@@ -974,7 +833,7 @@ main.main
             const div = document.createElement("div");
             div.className = type === "user" ? "user-msg" : "bot-msg";
             div.innerHTML = `
-            ${type === "bot" ? `<img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="avatar">` : ""}
+            ${type === "bot" ? `<img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="avatar" alt="website" >` : ""}
             <div class="msg-bubble">
             ${text}
             <span class="time">${new Date().getHours()}:${String(new Date().getMinutes()).padStart(2,'0')}</span>
@@ -994,27 +853,15 @@ main.main
   // End Footer Area
   script(type='application/json' data-drupal-selector='drupal-settings-json').
     {"path":{"baseUrl":"\\/","pathPrefix":"","currentPath":"contact","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"","suppressDeprecationErrors":true,"clientside_validation_jquery":{"validate_all_ajax_forms":2,"force_validate_on_blur":false,"force_html5_validation":false,"messages":{"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date (ISO).","number":"Please enter a valid number.","digits":"Please enter only digits.","equalTo":"Please enter the same value again.","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}.","step":"Please enter a multiple of {0}."},"user":{"uid":0,"permissionsHash":"9582417dfe80a723cf846f43ffbed3652f88ffa08ae3527b795beeabfddfb78f"}
-  script(src='js/jquery.min_1.js')
-  script(src='js/once.min.js')
-  script(src='js/drupalSettingsLoader.js')
-  script(src='js/drupal.js')
-  script(src='js/drupal.init.js')
-  script(src='js/page.js' defer='')
-  script(src='js/addtoany.js')
-  script(src='js/jquery.min.js')
+  
   script(src='js/bootstrap.bundle.min.js')
-  script(src='js/popper.min.js')
-  script(src='js/slick.min.js')
-  script(src='js/gsap.min.js')
-  script(src='js/ScrollTrigger.min.js')
+  script(src='js/once.min.js')
+  script(src='js/page.js' defer='')  
   script(src='js/lottie-player.js')
-  script(src='js/aos.js')
-  script(src='js/jquery.floatit.js')
-  script(src='js/jquery.lazy.min.js')
   script(src='js/global.js')
-  script(src='js/formValidations.js')
+  script(src='js/custom.js')
   script(src='//unpkg.com/phosphor-icons')
-  script(src='js/form-submit.js')
+  
   script.
     AOS.init({
     duration: 1000,
@@ -1023,16 +870,9 @@ main.main
     });
   // Link of JS Files
   script(data-cfasync='false' src='js/js/email-decode.min.js')
-  script(src='js/jquery.min.js')
-  script(src='js/js/bootstrap.bundle.min.js')
   script(src='js/js/swiper-bundle.min.js')
   script(src='js/js/scrollCue.min.js')
   script(src='js/js/simpleParallax.min.js')
   script(src='js/js/fslightbox.min.js')
-  script(src='js/js/gsap.min.js')
-  script(src='js/js/ScrollTrigger.min.js')
   script(src='js/js/SplitText.min.js')
   script(src='js/js/main.js')
-  script.
-    (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c589b07be9ad592',t:'MTc2OTY4ODQwOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
-  iframe(height='1' width='1' style='position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;')

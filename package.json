@@ -5,7 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "purge-css": "purgecss --config purgecss.config.js",
+    "cleanup-css": "node cleanup-unused-css.js",
+    "find-unused": "node find-unused-files.js",
+    "remove-unused": "node remove-unused-files.js",
+    "analyze": "node analyze-project.js"
   },
   "keywords": [
     "express",

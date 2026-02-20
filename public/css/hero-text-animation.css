@@ -1,0 +1,77 @@
+/* Hero Text Animation Styles */
+
+/* Base h1 styling for hero section */
+.common-home-sect1 .common-sect-para h1 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #000;
+}
+
+/* Desktop font sizes (1200px and above) */
+@media screen and (min-width: 1200px) {
+    .common-home-sect1 .common-sect-para h1 {
+        font-size: 96px;
+    }
+    
+    .common-home-sect1 .common-sect-para h1 #hero-rotate-text {
+        font-size: 96px;
+    }
+}
+
+/* Tablet font sizes (768px to 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .common-home-sect1 .common-sect-para h1 {
+        font-size: 72px;
+    }
+    
+    .common-home-sect1 .common-sect-para h1 #hero-rotate-text {
+        font-size: 72px;
+    }
+}
+
+/* Mobile font sizes (below 768px) */
+@media screen and (max-width: 767px) {
+    .common-home-sect1 .common-sect-para h1 {
+        font-size: 48px;
+    }
+    
+    .common-home-sect1 .common-sect-para h1 #hero-rotate-text {
+        font-size: 48px;
+    }
+}
+
+/* Typing text with gradient - green "Unlimited" */
+#typed-text-unlimited {
+    background: linear-gradient(90deg, #35F729, #78E588, #2CD73A, #03C0C7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    display: inline;
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+    color: #35F729;
+    font-weight: 400;
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Second line text (hero-rotate-text) - dark text with animation */
+#hero-rotate-text {
+    color: #000;
+    font-weight: 500;
+    display: block;
+    margin-top: 5px;
+}

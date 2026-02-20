@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const sections = document.querySelectorAll(".section");
   const navLinks = document.querySelectorAll(".fbs__net-navbar .scroll-link");
-
+document.addEventListener("DOMContentLoaded", swiperInit);
   function removeActiveClasses() {
     if (navLinks) {
       navLinks.forEach((link) => link.classList.remove("active"));
@@ -227,14 +227,13 @@ const logoMarqueeInit = () => {
 
 document.addEventListener("DOMContentLoaded", logoMarqueeInit);
 
-// ======= Navbar Scroll =======
 document.addEventListener("DOMContentLoaded", function () {
   logoMarqueeInit();
   navbarInit();
   window.addEventListener("scroll", navbarScrollInit);
 });
 
-// ======= Swiper =======
+
 const swiperInit = () => {
   var swiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 1,
@@ -383,24 +382,6 @@ const inlineSvgInit = () => {
 };
 
 document.addEventListener("DOMContentLoaded", inlineSvgInit);
-
-// ======= AOS =======
-const aosInit = () => {
-  AOS.init({
-    duration: 800,
-    easing: 'slide',
-    once: true
-  });
-}
-document.addEventListener("DOMContentLoaded", aosInit);
-
-// ======= PureCounter =======
-const pureCounterInit = () => {
-  new PureCounter({
-    selector: ".purecounter",
-  });
-}
-document.addEventListener("DOMContentLoaded", pureCounterInit);
 
 // ======= Disable Click Navbar Dropdown =======
 const addHoverEvents = (dropdown) => {

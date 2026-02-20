@@ -1,115 +1,447 @@
 footer
-  .common-footer-wrapper-outer
-    .common-footer-wrapper
+  .modern-footer-wrapper
+    
+    // ===== CTA SECTION =====
+    .footer-cta-section
+      .container
+        .cta-content
+          h2.cta-title Ready to Transform Your Business?
+          p.cta-subtitle Let's build something amazing together
+          a.cta-button(href='/contact')
+            span Get Started
+            svg(width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor')
+              path(d='M5 12h14M12 5l7 7-7 7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
 
-      // ===== TOP CTA FOOTER =====
-      footer.common-footer1
-        .container
-          .row
-            .col-sm-12
-             .common-sect-para
-                h3(data-aos='fade-up' data-aos-delay='300' data-aos-anchor='.common-footer-wrapper-outer')
-                  | Believe in possibilities and navigate
-                  br
-                  | beyond the expected with us !
-                .btn-row(data-aos='fade-up' data-aos-delay='600' data-aos-anchor='.common-footer-wrapper-outer')
+    // ===== MAIN FOOTER =====
+    .footer-main
+      .container
+        .footer-grid
+          
+          // COMPANY INFO
+          .footer-column.footer-about
+            .footer-logo
+              img(src='images/logo-white.png' alt='Mamo Technolabs' width='250' height='60')
+            p.footer-description
+              | MaMo TechnoLabs LLP is an IT software development and training company based in Vadodara, Gujarat, India. We provide Laravel development, web application development, mobile app development, custom software solutions, and professional IT training through MaMo Academy.
+            
+            .social-links
+              a(href='https://www.facebook.com/p/MaMo-Technolabs-LLP-61551035098279/' target='_blank' aria-label='Facebook')
+                svg(width='20' height='20' viewBox='0 0 24 24' fill='currentColor')
+                  path(d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z')
+              a(href='https://www.linkedin.com/company/mamotechnolabs/posts/?feedView=all' target='_blank' aria-label='LinkedIn')
+                svg(width='20' height='20' viewBox='0 0 24 24' fill='currentColor')
+                  path(d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z')
+              a(href='https://www.instagram.com/mamotechnolabs' target='_blank' aria-label='Instagram')
+                svg(width='20' height='20' viewBox='0 0 24 24' fill='currentColor')
+                  path(d='M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z')
 
-      // ===== MAIN FOOTER =====
-      footer.common-footer2
-        .container.py-5
+          // QUICK LINKS
+          .footer-column
+            h4.footer-heading Quick Links
+            ul.footer-links
+              li
+                a(href='/') Home
+              li
+                a(href='/about-us') About Us
+              li
+                a(href='/Blog') Blog
+              li
+                a(href='/contact') Contact
 
-          // MAIN ROW
-          .row.g-4.g-lg-5
+          // SERVICES
+          .footer-column
+            h4.footer-heading Services
+            ul.footer-links
+              li
+                a(href='/software-development') Software Development
+              li
+                a(href='/website-development') Web Development
+              li
+                a(href='/custom-app') Mobile Apps
+              li
+                a(href='/digital-transformation') Digital Marketing
 
-            // LEFT SECTION - Company Info
-            .col-12.col-lg-4.mb-4.mb-lg-0.pe-lg-4
-              .footer-left
-                .logo-wrap.mb-4
-                  img(src='images/favicon.ico' alt='Mamo log' width='69' height='69' loading='lazy')
+          // CONTACT INFO
+          .footer-column.footer-contact
+            h4.footer-heading Get In Touch
+            .contact-item
+              svg(width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor')
+                path(d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z' stroke-width='2')
+                circle(cx='12' cy='10' r='3' stroke-width='2')
+              p Office No 27-29, RAAMA EMPERRO, 4th Floor, Manjalpur, Vadodara, Gujarat – 390011
+            .contact-item
+              svg(width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor')
+                path(d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z' stroke-width='2')
+              p
+                a(href='tel:+919325910095') +91 9325910095
+            .contact-item
+              svg(width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor')
+                path(d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z' stroke-width='2')
+                polyline(points='22,6 12,13 2,6' stroke-width='2')
+              p
+                a(href='mailto:info@mamotechnolabs.com') info@mamotechnolabs.com
 
-                p.para.mb-5(style='line-height: 1.9; font-size: 15px;')
-                  | MaMo Technolabs LLP is an IT software development and training company based in Vadodara, Gujarat, India. We provide Laravel development, web application development, mobile app development, custom software solutions, and professional IT training through MaMo Academy.
+    // ===== FOOTER BOTTOM =====
+    .footer-bottom
+      .container
+        .bottom-content
+          p.copyright © 2026 MaMo Technolabs. All rights reserved.
+          .footer-links-bottom
+            a(href='/term-conditions') Terms & Conditions
+            span.separator •
+            a(href='/privacy-policy') Privacy Policy
 
-                ul.social-ul.mt-4.mb-5
-                  li
-                    a(href='https://www.facebook.com/p/MaMo-Technolabs-LLP-61551035098279/' target='_blank')
-                      img(src='images/facebook-logo.svg' alt='facebook' loading='lazy')
-                  li
-                    a(href='https://www.linkedin.com/company/mamotechnolabs/posts/?feedView=all' target='_blank')
-                      img(src='images/linkedIn-logo.svg' alt='linkedin' loading='lazy')
-                  li
-                    a(href='https://www.instagram.com/mamotechnolabs' target='_blank')
-                      img(src='images/instagram-icon-logo.svg' alt='instagram' loading='lazy')
-
-                ul.iso-ul.mt-4
-                  li
-                    img(src='images/77942-I%2526M%20BU%20-%20CMMI%20Development%20-%20Maturity%20Level%20-%203.png' alt='CMMI' loading='lazy')
-                  li
-                    img(src='images/iso1.png' alt='iso1' loading='lazy')
-                  li
-                    img(src='images/iso2.png' alt='iso2' loading='lazy')
-
-            // MIDDLE SECTION - Quick Links
-            .col-6.col-sm-4.col-md-3.col-lg-2.mb-4.mb-lg-0.px-lg-3
-              h4.footer-title.text-white.mb-4(style='font-size: 18px; font-weight: 600;') Quick Links
-              ul.footer-links
-                li.mb-3
-                  a(href='/' style='font-size: 15px;') Home
-                li.mb-3
-                  a(href='/about-us' style='font-size: 15px;') About Us
-                li.mb-3
-                  a(href='/contact' style='font-size: 15px;') Contact
-
-            // RIGHT SECTION - Contact Info
-            .col-12.col-sm-8.col-md-9.col-lg-6.ps-lg-4
-              h4.footer-title.text-white.mb-4(style='font-size: 18px; font-weight: 600;') Contact Us
-              .footer-contact.text-white
-                .mb-4
-                  p.mb-2(style='font-weight: 600; font-size: 15px;')
-                    | Office Address:
-                  p.mb-0(style='line-height: 2; font-size: 15px;') Office No 27 to 29, RAAMA EMPERRO, 4th Floor, Besides Shell Petrol Pump, Jagdish Farshan Outlet, Manjalpur, Vadodara, Gujarat – 390011
-                .mb-4
-                  p.mb-2(style='font-weight: 600; font-size: 15px;')
-                    | Phone:
-                  p.mb-0(style='font-size: 15px;') 
-                    a(href='tel:+919325910095' style='color: #fff; text-decoration: none;') +91 9325910095
-                .mb-0
-                  p.mb-2(style='font-weight: 600; font-size: 15px;')
-                    | Email:
-                  p.mb-0(style='font-size: 15px;') 
-                    a(href='mailto:info@mamotechnolabs.com' style='color: #fff; text-decoration: none;') info@mamotechnolabs.com
-
-          // ===== COPYRIGHT ROW (FIXED POSITION) =====
-          .row.common-footer3-row.align-items-center.mt-5.pt-4(style='border-top:1px solid rgba(255,255,255,0.15);')
-
-            .col-lg-8.col-md-7.col-12.mb-3.mb-md-0
-              p.sm-para.mb-0(style='font-size: 14px;')
-                | © 2026 Mamo Technologies | All rights reserved
-
-            .col-lg-4.col-md-5.col-12.text-lg-end.text-start.mt-2.mt-lg-0
-              ul.tc-link.mb-0
-                li
-                  a(href='/term-conditions') Terms and Conditions
-                li.mx-2 |
-                li
-                  a(href='/privacy-policy') Privacy Policy
-      .cookie-card.d-none
-        .cookie-card-head
-          img(src='images/cookie.svg' alt='cookie' width='48' height='48' loading='lazy')
-          a.hide-cookie-card-btn(href='#')
-            img(src='images/Close_MD.svg' alt='Close_MD' width='24' height='24' loading='lazy')
-        .cookie-card-body
-          p.para
-            | Our website uses cookies to enhance your browsing experience, personalize content, and analyze our traffic. By clicking &quot;Accept All&quot;, you agree to the storing of cookies on your device to improve site navigation, analyze site usage, and assist in our marketing efforts. For more detailed information, please visit our 
-            br
-            a(href='/privacy-policy' target='_blank' rel='noopener noreferrer') Privacy Policy
-            | .
-          .btn-row
-            .btn.btn-normal
-              .btn-fill.btn-original-fill  
-              .btn-text.btn-original-text
-                a.btn-click.hide-cookie-card-btn(href='#')
-                  span Accept All
-              .btn-text.btn-duplicate-text
-                a.btn-click.hide-cookie-card-btn(href='#')
-                  span Accept All
+  style.
+    .modern-footer-wrapper {
+      background: #010101;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .modern-footer-wrapper .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .modern-footer-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 1;
+    }
+    
+    .footer-cta-section {
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .cta-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: white;
+      margin: 0 0 15px 0;
+      line-height: 1.2;
+    }
+    
+    .cta-subtitle {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0 0 35px 0;
+    }
+    
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #00ED87;
+      color: #ffffff;
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0, 237, 135, 0.3);
+    }
+    
+    .cta-button:hover {
+      background: #00D67A;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(0, 237, 135, 0.4);
+      color: #ffffff;
+    }
+    
+    .cta-button svg {
+      transition: transform 0.3s ease;
+    }
+    
+    .cta-button:hover svg {
+      transform: translateX(5px);
+    }
+    
+    .footer-main {
+      padding: 60px 0 40px;
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-main .container {
+      padding: 0 20px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 50px;
+    }
+    
+    .footer-column {
+      color: white;
+      margin:15px;
+    }
+    
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-logo img {
+      border-radius: 12px;
+    }
+    
+    .company-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+    }
+    
+    .footer-description {
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 12px;
+    }
+    
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .social-links a:hover {
+      background: #00ED87;
+      transform: translateY(-3px);
+    }
+    
+    .social-links a svg {
+      fill: white;
+    }
+    
+    .social-links a:hover svg {
+      fill: #ffffff;
+    }
+    
+    .footer-heading {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: white;
+      margin: 0 0 25px 0;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .footer-links a:hover {
+      color: #00ED87;
+      transform: translateX(5px);
+    }
+    
+    .contact-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    
+    .contact-item svg {
+      flex-shrink: 0;
+      stroke: #00ED87;
+      margin-top: 2px;
+    }
+    
+    .contact-item p {
+      color: rgba(255, 255, 255, 0.75);
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .contact-item a {
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-item a:hover {
+      color: #00ED87;
+    }
+    
+    .footer-bottom {
+      padding: 25px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .footer-bottom .container {
+      padding: 0 20px;
+    }
+    
+    .bottom-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .copyright {
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    
+    .footer-links-bottom {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .footer-links-bottom a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links-bottom a:hover {
+      color: #00ED87;
+    }
+    
+    .separator {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+      
+      .footer-about {
+        grid-column: 1 / -1;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .footer-cta-section {
+        padding: 60px 0;
+      }
+      
+      .cta-content {
+        padding: 0 20px;
+      }
+      
+      .cta-title {
+        font-size: 2rem;
+      }
+      
+      .cta-subtitle {
+        font-size: 1rem;
+      }
+      
+      .cta-button {
+        padding: 14px 32px;
+        font-size: 1rem;
+      }
+      
+      .footer-main {
+        padding: 40px 0 30px;
+      }
+      
+      .footer-main .container {
+        padding: 0 20px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+      
+      .footer-about {
+        margin: 15px;
+        grid-column: 1;
+      }
+      
+      .footer-bottom .container {
+        padding: 0 20px;
+      }
+      
+      .bottom-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .footer-cta-section {
+        padding: 50px 0;
+      }
+      
+      .cta-content {
+        padding: 0 15px;
+      }
+      
+      .cta-title {
+        font-size: 1.6rem;
+      }
+      
+      .footer-main .container {
+        padding: 0 15px;
+      }
+      
+      .footer-bottom .container {
+        padding: 0 15px;
+      }
+      
+      .footer-links-bottom {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .separator {
+        display: none;
+      }
+    }

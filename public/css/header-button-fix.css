@@ -1,0 +1,246 @@
+/* ========================================
+   HEADER BUTTON FIX - CLEAN & RESPONSIVE
+   ======================================== */
+
+/* CTA Button Base Styles */
+.cta-button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: #00D991;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none !important;
+    border: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 217, 145, 0.2);
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: #00C080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 217, 145, 0.35);
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+.cta-button span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+}
+
+.cta-button svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.cta-button:hover svg {
+    transform: translateX(4px);
+}
+
+/* Header Layout Fixes */
+.common-header .right-side-menu-w {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.common-header .btn-row {
+    display: flex;
+    align-items: center;
+}
+
+.common-header .row {
+    align-items: center !important;
+}
+
+/* Prevent overflow issues */
+.common-header-wrapper,
+.common-header,
+.common-header .container {
+    overflow: visible !important;
+}
+
+/* Mobile CTA Button */
+.mobile-menu .mobile-cta-item {
+    padding: 20px;
+    border-bottom: none !important;
+}
+
+.mobile-menu .mobile-cta-item .cta-button {
+    width: 100%;
+    padding: 16px 28px;
+}
+
+/* Mobile Toggle Button */
+.toggle-menu {
+    width: 32px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    z-index: 1050;
+}
+
+.toggle-menu div {
+    width: 100%;
+    height: 3px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.toggle-menu.on .one {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.toggle-menu.on .two {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.toggle-menu.on .three {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Mobile Menu Enhancements */
+.mobile-menu .accordion-heading {
+    position: relative;
+}
+
+.mobile-menu .accordion-heading::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu .accordion-heading[aria-expanded='true']::after {
+    content: '−';
+}
+
+.mobile-menu .accordion-heading:hover {
+    background: #f8f8f8;
+    color: #00D991;
+}
+
+/* Responsive Breakpoints */
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .cta-button svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 767px) {
+    .cta-button {
+        font-size: 15px;
+        padding: 12px 22px;
+    }
+    
+    .toggle-menu {
+        width: 28px;
+        height: 24px;
+    }
+    
+    .toggle-menu div {
+        height: 2.5px;
+    }
+}
+
+/* Small Mobile (< 576px) */
+@media (max-width: 575px) {
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .cta-button svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Accessibility */
+.cta-button:focus,
+.toggle-menu:focus {
+    outline: 2px solid #00D991;
+    outline-offset: 2px;
+}
+
+.cta-button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Smooth Animations */
+.mobile-menu {
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .cta-button {
+        background: #00D991 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+}

@@ -3,126 +3,147 @@
     .container
       .row.align-items-center
         .col-md-2.col-lg-2.col-6
-          a.logo-a(href="/")
-            img(src="/images/logo.png" alt="Mamo log")
-        
+          a.logo-a(href='/')
+            img(src='images/logo.png' alt='Mamo  log')
         .col-md-7.col-lg-8.col-3.common-header-col-outer
           #menu.hide-mobile.show-desktop
             ul.common-header-ul
               li.dropdown.mega-dropdown
-                a.dropdown-toggle(href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false")
+                a.dropdown-toggle(href='#' data-bs-toggle='dropdown' data-bs-auto-close='outside' aria-expanded='false')
                   | What we do
                   i.ph-caret-down
-                
                 .dropdown-menu.mega-dropdown-menu
                   .container
                     .row
                       .col-md-4.link-col-left
-                        .nav-pills#v-pills-tab(role="tablist" aria-orientation="vertical")
-                          a.nav-link-a(href="#" id="v-pills-services-tab" data-bs-toggle="pill" data-bs-target="#v-pills-services" type="button" role="tab" aria-controls="v-pills-services" aria-selected="false") Development & Engineering Services
-                          a.nav-link-a(href="#" id="v-pills-industry-tab" data-bs-toggle="pill" data-bs-target="#v-pills-industry" type="button" role="tab" aria-controls="v-pills-industry" aria-selected="false") Business, Growth & Support Services
-                          a.nav-link-a(href="/about-us" id="v-pills-products-tab" data-bs-toggle="pill" data-bs-target="#v-pills-products" type="button" role="tab" aria-controls="v-pills-products" aria-selected="false") About Us
-                      
+                        #v-pills-tab.nav-pills(href='#' role='tablist' aria-orientation='vertical')
+                          a#v-pills-services-tab.nav-link-a(href='#' data-bs-toggle='pill' data-bs-target='#v-pills-services' type='button' role='tab' aria-controls='v-pills-services' aria-selected='false')  Development &amp; Engineering Services 
+                          a#v-pills-industry-tab.nav-link-a(href='#' data-bs-toggle='pill' data-bs-target='#v-pills-industry' type='button' role='tab' aria-controls='v-pills-industry' aria-selected='false') Business, Growth &amp; Support Services 
+                          a#v-pills-products-tab.nav-link-a(href='overview.html' data-bs-toggle='pill' data-bs-target='#v-pills-products' type='button' role='tab' aria-controls='v-pills-products' aria-selected='false') About Us
                       .col-md-8.link-col-right
-                        .tab-content#v-pills-tabContent
-                          .tab-pane.fade.show.active#v-pills-overview(role="tabpanel" aria-labelledby="v-pills-overview-tab" tabindex="0")
+                        #v-pills-tabContent.tab-content
+                          #v-pills-overview.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-overview-tab' tabindex='0')
                             .menu-para
                               h6 Start Your Digital Transformation.
-                              p.para Calling India home, while transforming stories in 50+ countries, Mamo has helped industry leaders innovate ahead for 20+ years, leveraging the best, most robust, and the most exciting digital technologies out there. Here's our story.
+                              p.para
+                                | Calling India home, while transforming stories in 50+ countries, Mamo has helped industry leaders innovate ahead for 20+ years, leveraging the best, most robust, and the most exciting digital technologies out there. Here&rsquo;s our story.
                               p
-                                a.know-more-btn(href="/about-us") Know More
-                          
-                          .tab-pane.fade#v-pills-services(role="tabpanel" aria-labelledby="v-pills-services-tab" tabindex="0")
+                                a.know-more-btn(href='about-us')
+                                  | Know
+                                  | More
+                          #v-pills-services.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-services-tab' tabindex='0')
                             .menu-para
-                              h6 Development & Engineering Services
+                              h6 Development &amp; Engineering Services
                               .row
                                 .col-md-6
                                   .menu-para-col
-                                    a.nav-link-b(href="/software-development") Software Development​
-                                    a.nav-link-b(href="/website-development") Web App Development
-                                    a.nav-link-b(href="/custom-app") Custom Mobile App Development
+                                    a.nav-link-b(href='software-development')  Software Development&ZeroWidthSpace; 
+                                    a.nav-link-b(href='website-development')  Web App Development 
+                                    a.nav-link-b(href='custom-app') Custom Mobile App Development
                                 .col-md-6
                                   .menu-para-col
-                                    a.nav-link-b(href="/frontend-development") Frontend Development
-                                    a.nav-link-b(href="/web-portal") Web Portal Development
-                                    a.nav-link-b(href="/qa-testing") QA and Software Testing
-                          
-                          .tab-pane.fade#v-pills-industry(role="tabpanel" aria-labelledby="v-pills-industry-tab" tabindex="0")
+                                    a.nav-link-b(href='frontend-development')
+                                      | Frontend Development
+                                    a.nav-link-b(href='web-portal')  Web Portal Development
+                                    a.nav-link-b(href='qa-testing')  QA and Software Testing
+                          #v-pills-industry.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-industry-tab' tabindex='0')
                             .menu-para
-                              h6 Business, Growth & Support Services
+                              h6 Business, Growth &amp; Support Services
                               .row
                                 .col-md-6
                                   .menu-para-col
-                                    a.nav-link-b(href="/itstaff-augmentation") IT Staff Augmentation
-                                    a.nav-link-b(href="/digital-transformation") Digital Marketing Services
+                                    a.nav-link-b(href='/itstaff-augmentation')  IT Staff Augmentation 
+                                    a.nav-link-b(href='/digital-transformation')  Digital Marketing Services
                                 .col-md-6
                                   .menu-para-col
-                                    a.nav-link-b(href="/virtual-assistant-services") Virtual Assistant Services
-                                    a.nav-link-b(href="/packaging-design") Packaging Design Services
-              
+                                    a.nav-link-b(href='/virtual-assistant-services')
+                                      | Virtual Assistant Services
+                                    a.nav-link-b(href='/packaging-design') Packaging Design Services
+                          #v-pills-products.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-products-tab' tabindex='0')
               li.dropdown.mega-dropdown
-                a.dropdown-toggle(href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false")
+                a.dropdown-toggle(href='#' data-bs-toggle='dropdown' data-bs-auto-close='outside' aria-expanded='false')
                   | Blog
                   i.ph-caret-down
-                
                 .dropdown-menu.mega-dropdown-menu
                   .container
                     .row
                       .col-md-4.link-col-left
-                        .nav-pills#b-pills-tab(role="tablist" aria-orientation="vertical")
-                          a.nav-link-a.active(href="/blog" id="b-pills-about-us-tab" type="button" role="tab" aria-controls="b-pills-about-us" aria-selected="true") Blog
-                      
+                        #b-pills-tab.nav-pills(role='tablist' aria-orientation='vertical')
+                          a#b-pills-about-us-tab.nav-link-a.active(href='Blog' type='button' role='tab' aria-controls='b-pills-about-us' aria-selected='true') Blog 
                       .col-md-8.link-col-right
-                        .tab-content#b-pills-tabContent
-                          .tab-pane.fade.show.active#b-pills-about-us(role="tabpanel" aria-labelledby="b-pills-about-us-tab" tabindex="0")
+                        #b-pills-tabContent.tab-content
+                          #b-pills-about-us.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='b-pills-about-us-tab' tabindex='0')
                             .menu-para
                               .row.row-adj
-                                h6 Our Blogs
+                                h6 Our Blogs 
                                 br
-                                p.para At MaMo Technolabs, we share expert insights on software development, web technologies, business growth, and digital innovation. Explore our blogs to stay updated with the latest trends, strategies, and practical guides for building smarter solutions.
-        
+                                p.para
+                                  | At MaMo Technolabs, we share expert insights on software development,
+                                  | web technologies, business growth, and digital innovation.
+                                  | Explore our blogs to stay updated with the latest trends, strategies, and practical guides for building smarter solutions.
         .col-md-3.col-lg-2.col-3
           .right-side-menu-w
             .btn-row.hide-mobile
-              div
-                a.btn-click(href="/contact")
-                  div
-                    button.btoptop Contact Us
-            
+              a.contact-btn(href='/contact')
+                span Contact Us
             .hide-desktop.show-mobile
-              a(href="#")
+              a(href='#')
                 #toggle.toggle-menu
                   .one
                   .two
                   .three
-  
-  .hide-desktop.show-mobile
-    .mobile-menu(style="display:none;")
-      nav#column_left
-        ul.nav-list
-          li
-            a.accordion-heading(data-bs-toggle="collapse" data-bs-target="#submenu1" aria-expanded="false") What we do
-            ul.nav-list.collapse#submenu1(aria-expanded="false")
-              li
-                a(data-bs-toggle="collapse" data-bs-target="#submenu2" aria-expanded="false") Development & Engineering Services
-                ul.nav-list.collapse#submenu2(aria-expanded="false")
-                  li: a(href="/software-development") Software Development
-                  li: a(href="/website-development") Web App Development
-                  li: a(href="/custom-app") Custom Mobile App Development
-                  li: a(href="/frontend-development") Frontend Development
-                  li: a(href="/web-portal") Web Portal Development
-                  li: a(href="/qa-testing") QA and Software Testing
-              li
-                a(data-bs-toggle="collapse" data-bs-target="#submenu3" aria-expanded="false") Business, Growth & Support Services
-                ul.nav-list.collapse#submenu3(aria-expanded="false")
-                  li: a(href="/itstaff-augmentation") IT Staff Augmentation
-                  li: a(href="/digital-transformation") Digital Marketing Services
-                  li: a(href="/virtual-assistant-services") Virtual Assistant Services
-                  li: a(href="/packaging-design") Packaging Design Services
-              li: a(href="/about-us") About us
-          li
-            a.accordion-heading(data-bs-toggle="collapse" data-bs-target="#submenu31" aria-expanded="false") Blog
-            ul.nav-list.collapse#submenu31
-              li: a(href="/blog") Blog
-            div(style="margin-top: 10px; padding: 10px 120px;")
-              a(href="/contact" style="display: block; text-align: center; background-color: white; color: black; padding: 15px 40px; border: 2px solid black; border-radius: 40px; text-decoration: none; font-weight: 600; font-size: 16px;") Contact Us
+  .block.block-block-content.block-block-content03dabb50-afb4-4728-bab3-6eadb5bb7223
+    .hide-desktop.show-mobile
+      .mobile-menu(style='display:none;')
+        nav#column_left
+          ul.nav-list
+            li
+              a.accordion-heading(data-bs-toggle='collapse' data-bs-target='#submenu1' aria-expanded='false') What we do&nbsp;
+              ul#submenu1.nav-list.collapse(aria-expanded='false')
+                li
+                  // <a href="overview">Overview</a>
+                li
+                  a(data-bs-toggle='collapse' data-bs-target='#submenu2' aria-expanded='false') Development &amp; Engineering Services 
+                  ul#submenu2.nav-list.collapse(aria-expanded='false')
+                    li
+                      a(href='/software-development') Software Development
+                    li
+                      a(href='/website-development')
+                        | Web App Development
+                    li
+                      a(href='/custom-app')
+                        | Custom Mobile App Development
+                    li
+                      a(href='/frontend-development')
+                        | Frontend Development
+                    li
+                      a(href='/web-portal')
+                        | Web Portal Development
+                    li
+                      a(href='/qa-testing')
+                        | QA and Software Testing
+                li
+                  a(data-bs-toggle='collapse' data-bs-target='#submenu3' aria-expanded='false') Business, Growth &amp; Support Services 
+                  ul#submenu3.nav-list.collapse(aria-expanded='false')
+                    li
+                      a(href='/itstaff-augmentation') IT Staff Augmentation
+                    li
+                      a(href='/digital-transformation')
+                        | Digital Marketing Services
+                    li
+                      a(href='/virtual-assistant-services')
+                        | Virtual Assistant Services
+                    li
+                      a(href='/packaging-design')
+                        | Packaging Design Services
+                li
+                  a(href='about-us') About us
+            li
+              a.accordion-heading(data-bs-toggle='collapse' data-bs-target='#submenu31' aria-expanded='false')
+                | Blog
+              ul#submenu31.nav-list.collapse
+                li
+                  a(href='Blog') Blog
+          .mobile-contact-btn-wrapper
+            a.mobile-contact-btn(href='/contact')
+              span Contact Us
