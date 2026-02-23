@@ -7640,21 +7640,69 @@ a.back-btn i,
 }
 
 .hero-bg {
-    /* background-image: url("../images/back-vidup.mp4");  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.hero-bg-video {
+#hero-3d-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#hero-3d-background canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* 3D Background for page banners */
+.page-banner-area {
+    position: relative;
+}
+
+#page-banner-3d-background,
+.banner-3d-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#page-banner-3d-background canvas,
+.banner-3d-background canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Ensure page banner content is above 3D background */
+.page-banner-area .container-fluid,
+.page-banner-area .row,
+.page-banner-area .page-banner-content,
+.page-banner-area .page-banner-right-content,
+.page-banner-area h2,
+.page-banner-area p,
+.page-banner-area a,
+.page-banner-area button,
+.page-banner-area .image,
+.page-banner-area .wrap-image,
+.page-banner-area .wrap-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-bg .hero-logo {
@@ -7674,6 +7722,20 @@ a.back-btn i,
 .hero-bg div {
     position: relative;
     z-index: 2;
+}
+
+/* Ensure buttons are above 3D background */
+.hero-bg button.learn-more,
+.hero-bg button.Btn,
+.hero-bg .whatsapp-link {
+    position: relative;
+    z-index: 10 !important;
+}
+
+.hero-bg button.learn-more *,
+.hero-bg button.Btn * {
+    position: relative;
+    z-index: 10 !important;
 }
 
 
@@ -7707,7 +7769,7 @@ a.back-btn i,
 
     .hero-bg {
     position: relative;
-    /* background-image: url("../images/hero.gif");  */
+    background-image: url("../images/hero.png"); 
     background-size: cover;      
     background-position:2.5% center;   
     background-repeat: no-repeat;
@@ -7722,8 +7784,12 @@ a.back-btn i,
     justify-content: center;
 }
     
-    .hero-bg-video {
-        display: none;
+    #hero-3d-background {
+        display: block;
+    }
+
+    #hero-3d-background canvas {
+        display: block;
     }
 
 }
