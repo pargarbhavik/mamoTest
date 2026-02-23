@@ -7640,7 +7640,7 @@ a.back-btn i,
 }
 
 .hero-bg {
-    background-image: url("../images/back-vidup.mp4"); 
+    /* background-image: url("../images/back-vidup.mp4");  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
