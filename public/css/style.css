@@ -7707,7 +7707,7 @@ a.back-btn i,
 
     .hero-bg {
     position: relative;
-    background-image: url("../images/hero.gif"); 
+    /* background-image: url("../images/hero.gif");  */
     background-size: cover;      
     background-position:2.5% center;   
     background-repeat: no-repeat;
