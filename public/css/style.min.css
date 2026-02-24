@@ -1,557 +1,84 @@
-.common-home-sect2 .content-box .common-sect-para {
-    margin-top: 460px;
-}
-/* 
-@media screen and (max-width:767px) {
-    .common-home-sect2 .content-box .common-sect-para {
-        margin-bottom: 20px;
-        margin-top: 0;
-        justify-content: start;
-        padding: 0
-    }
-}
-
-@media screen and (min-width:1200px)and (max-width:1599px) {
-    .common-home-sect2 .content-box .common-sect-para {
-        margin-top: 260px
-    }
-}
-
-@media screen and (min-width:992px)and (max-width:1199px) {
-    .common-home-sect2 .content-box .common-sect-para {
-        margin-top: 260px
-    }
-}
-
-@media screen and (min-width:768px)and (max-width:991px) {
-    .common-home-sect2 .content-box .common-sect-para {
-        margin-top: 460px
-    }
-} */
-
-@media screen and (max-width:767px) {
+/* @media screen and (max-width:767px) {
     .common-home-sect2 .scroll-img {
-        min-height: 215px;
-        width: 100%;
-        position: relative;
-        left: 0;
-        top: 0;
+        
         margin-bottom: 20px
-    }
-    
-}
-
+    }    
+} */
 @media screen and (max-width:767px) {
-    /* .common-home-sect2 .scroll-img.hide-desktop.show-mobile {
-        background: url("../images/innovate-bg-4.png") no-repeat 0 center;
-        width: 100%;
-        height: 215px;
-        display: block;
-        background-size: contain;
-        left: -5px !important
-    } */
-
 }
-
 .common-home-sect4-wrap.slide-1-bg img.fintech1-icon {
     position: absolute;
     top: 400px;
     right: 540px;
 }
-
 @media screen and (min-width:992px)and (max-width:1199px) {
     .common-home-sect4-wrap.slide-1-bg img.fintech1-icon {
         top: 250px;
         right: 330px
     }
 }
-
 @media screen and (min-width:768px)and (max-width:991px) {
     .common-home-sect4-wrap.slide-1-bg img.fintech1-icon {
         top: 200px;
         right: 210px
     }
 }
-
 @media screen and (max-width:767px) {
     .common-home-sect4-wrap.slide-1-bg img.fintech1-icon {
         top: 220px;
         right: 280px
     }
 }
-
 @media screen and (min-width:1200px)and (max-width:1290px) {
     .common-home-sect4-wrap.slide-1-bg img.fintech1-icon {
         right: 500px
     }
 }
-
 .common-home-sect4-wrap.slide-2-bg img.fintech1-icon {
     position: absolute;
     top: 90px
     
 }
-
 @media screen and (max-width:767px) {
     .common-home-sect4-wrap.slide-2-bg img.fintech1-icon {
         top: 55px
         
     }
 }
-
 .common-home-sect4-wrap.slide-3-bg img.fintech1-icon {
     top: 70px;
 }
-
 @media screen and (max-width:767px) {
     .common-home-sect4-wrap.slide-3-bg img.fintech1-icon {
         top: 30px;
     }
 }
-
 @media screen and (min-width:992px)and (max-width:1199px) {
     .common-home-sect4-wrap.slide-3-bg img.fintech1-icon {
         top: 20px;
     }
 }
-
 @media screen and (min-width:768px)and (max-width:991px) {
     .common-home-sect4-wrap.slide-3-bg img.fintech1-icon {
         top: 20px;
     }
 }
-
-
 .common-home-sect4-wrap.slide-5-bg img.fintech1-icon {
     position: absolute;
     top: 420px;
 }
-
 @media screen and (max-width:767px) {
     .common-home-sect4-wrap.slide-5-bg img.fintech1-icon {
         top: 240px;
     }
 }
-
 @media screen and (min-width:992px)and (max-width:1199px) {
     .common-home-sect4-wrap.slide-5-bg img.fintech1-icon {
         top: 270px;
     }
 }
-
 @media screen and (min-width:768px)and (max-width:991px) {
     .common-home-sect4-wrap.slide-5-bg img.fintech1-icon {
         top: 210px;
     }
 }
-.hero-logo {             
-    left: 856px;            
-    max-width: 1000px
-}
-
-/*  */
-
-/* end  why mamo*/
-
-
-/* ============================================================
-   GLOBAL RESPONSIVE ENHANCEMENTS FOR MOBILE & TABLET
-   (Non-destructive: only overrides / adds for small screens)
-============================================================ */
-
-/* Slightly relax max-widths on medium screens */
-@media (max-width: 1200px) {
-  .container,
-  .container2 {
-    max-width: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-/* Tablet and down */
-@media (max-width: 992px) {
-  /* Generic containers */
-  .container,
-  .container2 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* Headings scale down */
-  .section-title h2,
-  .commen-title-heading h2,
-  .testimonials-title,
-  .industry-title,
-  .flowx-title {
-    font-size: 30px;
-  }
-
-  .section-title3 h2 {
-    font-size: 42px;
-  }
-
-  /* Stats section spacing */
-  .stats-section {
-    margin: 40px auto;
-    padding: 40px 24px;
-  }
-
-  /* Why choose layout padding */
-
-  /* Process / step bar */
-  .flowx-process-area {
-    padding: 60px 16px;
-  }
-
-  /* Portfolio header alignment on tablets */
-  .home7-portfolio-section .container3 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-/* Mobile first breakpoint */
-@media (max-width: 768px) {
-  /* Normalize body text readability */
-  body {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .container,
-  .container2 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  /* Tabs navigation becomes scrollable row */
-  .tabs-nav {
-    justify-content: flex-start;
-    overflow-x: auto;
-    white-space: nowrap;
-    border-radius: 40px;
-  }
-
-  .tabs-nav li a {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
-
-  /* Stats section single-column already handled; tighten padding */
-  .stats-section {
-    margin: 32px auto;
-    padding: 32px 16px;
-    border-radius: 28px;
-  }
-
-  .stat-value {
-    font-size: 40px;
-  }
-
-  .stat-text {
-    font-size: 14px;
-  }
-
-  /* Testimonials marquee cards a bit narrower for small screens */
-  .card {
-    width: 260px;
-    padding: 16px;
-  }
-
-  .card-text {
-    font-size: 14px;
-  }
-
-  /* Portfolio section padding */
-  .home7-portfolio-section {
-    padding: 60px 0;
-  }
-
-  .home7-portfolio-section .section-title3 h2 {
-    font-size: 36px;
-  }
-
-  .section-title3 p {
-    font-size: 15px;
-    line-height: 1.4;
-    margin: 10px 0;
-  }
-
-  /* Why choose cards spacing */
-
-  /* Process cards full-width stack (arrows hidden earlier for <=1100px) */
-  .flowx-card {
-    min-height: 0;
-    padding: 22px 18px;
-  }
-
-  /* Chat box more compact on mobile */
-  .chatbox {
-    width: 100%;
-    max-width: 100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 65vh;
-    border-radius: 20px 20px 0 0;
-  }
-
-  .chat-header {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .chat-body {
-    padding: 10px;
-  }
-
-  .chat-footer input {
-    font-size: 13px;
-  }
-
-  /* Contact popup vertical layout improved on mobile */
-  #contactPopup .modal-box {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 8px;
-    border-radius: 16px 16px 0 0;
-  }
-}
-
-/* Small mobile tweaks */
-@media (max-width: 576px) {
-  /* Main headings */
-  .section-title h2,
-  .commen-title-heading h2,
-  .testimonials-title,
-  .industry-title,
-  .flowx-title {
-    font-size: 24px;
-  }
-
-  .home7-portfolio-section .section-title3 h2 {
-    font-size: 30px;
-  }
-
-  .why-desc,
-  .commen-title-heading p {
-    font-size: 14px;
-  }
-
-  /* Reduce global paddings */
-  
-  .flowx-process-area,
-  .Tech-Stacks,
-  .home6-integration-section {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  /* Floating WhatsApp button reposition & scale */
-
-  /* Floating chat button smaller and closer to edge */
-  .chat-fab {
-    bottom: 20px !important;
-    right: 20px !important;
-    left: auto !important;
-    width: 56px;
-    height: 56px;
-  }
-
-  .chat-fab img {
-    width: 26px;
-    height: 26px;
-  }
-
-  /* Social icon column (example-2) closer to edges & slightly smaller */
-  .example-2 {
-    left: 16px;
-    bottom: 20px;
-    row-gap: 10px;
-  }
-
-  .example-2 .icon-content a {
-    width: 46px;
-    height: 46px;
-  }
-
-  .example-2 .icon-content a svg {
-    width: 24px;
-    height: 24px;
-  }
-
-  .example-2 .icon-content .tooltip {
-    left: 56px;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-  /* Contact popup columns stack tighter (complements <=800px rules) */
-  #contactPopup .popup-left {
-    padding: 20px 18px;
-  }
-
-  #contactPopup .popup-right {
-    padding: 24px 18px 20px;
-  }
-
-  #contactPopup .left-text h2 {
-    font-size: 22px;
-  }
-
-  #contactPopup .left-text p {
-    font-size: 14px;
-  }
-
-  #contactPopup input,
-  #contactPopup textarea {
-    font-size: 14px;
-  }
-}
-
-/* Extra-small devices */
-@media (max-width: 420px) {
-  .tabs-nav {
-    padding: 8px 10px;
-    gap: 8px;
-  }
-
-  .tabs-nav li a {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
-
-  .stats-section {
-    padding: 24px 14px;
-  }
-
-  .card {
-    width: 230px;
-  }
-
-  
-  .flowx-title {
-    font-size: 22px;
-  }
-
-  .chatbox {
-    height: 60vh;
-  }
-}
-
-/* ================= MOBILE VIEW ================= */
-@media (max-width: 768px) {
-
-  #contactPopup {
-    padding: 20px;
-  }
-
-  .modal-box {
-    flex-direction: column;
-    width: 100%;
-    max-width: 95%;
-    border-radius: 16px;
-    position: relative; /* important */
-  }
-
-  /* MOBILE CLOSE BUTTON */
-  .close-btn {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    font-size: 22px;
-    z-index: 999;
-  }
-
-  .popup-left,
-  .popup-right {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .popup-left img {
-    width: 60px;
-    margin-bottom: 10px;
-  }
-
-  .left-text h2 {
-    font-size: 20px;
-  }
-
-  .left-text p {
-    font-size: 14px;
-  }
-
-  .popup-right form {
-    width: 100%;
-  }
-
-  .popup-right input,
-  .popup-right textarea {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .popup-right button {
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
-  }
-
-}
-/* ===============================
-   Center wrap-image in mobile
-   =============================== */
-@media (max-width: 767px) {
-
-  .wrap-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .wrap-image img {
-    display: block;
-    margin: 0 auto;
-    max-width: 90%;
-    height: auto;
-  }
-.wrap-image { width: 100%; }
-
-}
-
-
-
-@media (max-width: 767px) {
-  span.sub {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 24px auto 16px; /* TOP spacing fixed */
-    padding: 6px 16px;
-
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
-    text-align: center;
-    white-space: nowrap;
-  }
-}
-@media (max-width: 767px) {
-  #submenu31.collapse {
-    display: none;
-  }
-
-  #submenu31.collapse.show {
-    display: block;
-  }
-}
-
-
